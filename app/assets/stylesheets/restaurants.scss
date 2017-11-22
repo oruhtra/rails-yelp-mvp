@@ -1,0 +1,36 @@
+.restaurant-card {
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+  display: flex;
+  border-radius: 5px;
+}
+
+.card-content:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+  opacity: 0.8;
+}
+
+.restaurant-thumbnail {
+  margin-right: 20px;
+}
+
+.restaurant-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+
+.restaurant-address {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.restaurant-category {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+}

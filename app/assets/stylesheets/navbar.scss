@@ -1,0 +1,31 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: rgba(1, 1, 1, 0.05);
+}
+
+.logo-brand {
+  height: 100px;
+}
+
+.navbar-right-side {
+  display: flex;
+  justify-items: space-around;
+  margin-right: 50px;
+}
+
+.navbar-item {
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.navbar-link {
+  color: #616668;
+  font-size: 14px;
+}
+.navbar-link:hover {
+  color: #da552f;
+  text-decoration: none;
+}

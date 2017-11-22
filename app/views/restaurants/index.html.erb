@@ -1,0 +1,25 @@
+<div class="container">
+  <h1 class="text-center">All restaurants</h1>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <ul class="list-unstyled">
+          <% @restaurants.each do |r|%>
+            <%= link_to restaurant_path(r) do %>
+            <li class="restaurant-card">
+              <div class="card-content">
+                <%= image_tag("https://loremflickr.com/300/200/restaurant", class: 'restaurant-thumbnail') %>
+                <div class="restaurant-content">
+                  <p class="restaurant-title"><%= r.name %></p>
+                  <p class="restaurant-category"><%= r.category %></p>
+                  <p class="restaurant-address"><%= r.address %></p>
+                </div>
+              </div>
+            </li>
+            <% end %>
+          <% end %>
+        </ul>
+    </div>
+  </div>
+</div>
+
+

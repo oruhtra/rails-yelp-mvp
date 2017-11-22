@@ -1,0 +1,23 @@
+<div class="container text-center">
+<h1><%= @restaurant.name %></h1>
+<%= image_tag("https://loremflickr.com/500/300/restaurant") %>
+
+<ul class="list-unstyled">
+  <% @reviews.each do |r| %>
+    <li>
+      <%= link_to review_path(r) do %>
+        <ul class="list-inline">
+          <li><%= r.content %></li>
+          <li><%= r.rating %></li>
+        </ul>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Edit restaurant", edit_restaurant_path(@restaurant) %>
+<%= link_to "Delete", restaurant_path(@restaurant),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+<%= link_to "Add review", new_restaurant_review_path(@restaurant) %>
+</div>

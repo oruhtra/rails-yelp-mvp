@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <h1>Review for <em><%= @restaurant.name %></em></h1>
+  <h3><%= @review.content %></h3>
+  <p><%= @review.rating %></p>
+
+
+  <%= link_to "Delete", review_path(@review),
+      method: :delete,
+      data: { confirm: "Are you sure?" } %>
+</div>
